@@ -352,6 +352,7 @@ void PathFinder(Graph *G,Vertex v,Vertex w)
 			printf(" %d  ",Path[i]);
 		}
 	}
+	printf("\n \n");
 }
 
 int PathArray(Graph *G,Vertex v,Vertex w)
@@ -505,7 +506,7 @@ Graph *MetroPath(char ***MetroMap,int *counter)
 			}
 	}		
 	printGraphUndirected(graph,MetroMap,counter);
-	
+	//I used numbers to select the beggining and the ending station
 	int start=25,end=13;
 	int *Path=BreadthFirst(graph,PrintElement,start,end);
 	printf("Path: ");

@@ -76,13 +76,13 @@ int main()
 	Sort(graph);
 
 	// print the adjacency list representation of the above graph
-	printGraph(graph);
+	//printGraph(graph);
 
 	//StronglyConnectedComponents(graph, V);
 
-	//PathFinder(graph,7,2);
+	PathFinder(graph,7,2);
 	
-	//Metro();
+	Metro();
 	Free();
 
 	return 0;
